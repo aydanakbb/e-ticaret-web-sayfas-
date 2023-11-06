@@ -30,18 +30,18 @@ h1 {
 .form-control {
     font-size: 16px;
     padding: auto;
-    border: 2px solid #cc5c11;
+    border: 2px solid #ca5005;
     border-radius: 5px;
     width: calc(100% - 26px);
 }
 
 .form-control:focus {
-    border-color: #ff6600;
+    border-color: #85766c;
     box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
 }
 
 .btn-primary {
-    background-color: #e56c1b;
+    background-color: #b9b9b9;
     color: #ffffff;
     border: none;
     border-radius: 100px;
@@ -53,7 +53,7 @@ h1 {
 }
 
 .btn-primary:hover {
-    background-color: #926e5d;
+    background-color: #a78879;
 }
 
 #additionalFields {
@@ -65,26 +65,26 @@ h1 {
 .social-icons {
     display: flex;
     align-content: center;
-    align-items: center;
+    align-items: first baseline;
     justify-content: center;
     margin: 15px ;
     padding: 1px;
-    height: 40px;
+    height: 30px;
   }
   /*facebbokla ilgili buton değişimlerini */
   .social-icons img {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 100px;
+   align-items:safe;
+    vertical-align:sub;
+    padding-right: 158px;
     padding-right: initial 00;
   }
   
   .social-icons.google {
-    padding-right:150px;
+    padding: right 150px;
   }
   
   .facebook {
-    background-image: linear-gradient(to left, #3b5998, #1976d2, #3b5998);
+    background-image: linear-gradient(to left, #3b5998, #999c9e, #3b5998);
     border-radius:100px;
     text-align: center;
 
@@ -98,24 +98,25 @@ h1 {
   }
 
   .facebook a:hover{
-    color: #03203b;
+    color: #000901;
   }
   
   .google {
-    background-color: #4774d758;
-    border-radius: 100px;
-    
+    background-image: linear-gradient(to left, #215ad5, rgb(29, 215, 66), rgb(191, 207, 16));
+      border-radius:100px;
+      text-align: center;
   }
   
   .google a {
+  color: #efefef;
+    width: 100%;
     padding: auto;
     margin: 10px;
-   
-    
-    }
+  }
+  
   
   .google a:hover {
-    color: #9b2020;
+    color: #8d1f1f;
   }
   .btn {
   display: block;
@@ -124,7 +125,7 @@ h1 {
   border-radius: 15px;
   margin: -1px;
   font-size: 1rem;
-  background-image: linear-gradient(to right, #db4b23, #e73d0e, #db4b23);
+  background-image: linear-gradient(to right, #db4b23, #544643, #db4b23);
   color: #f9f9f9;
   outline: none;
   border: none;
@@ -138,8 +139,8 @@ h1 {
   background-position: right;
 }
 button {
-  background-color: #e6890f; /* Düğmenin arka plan rengi */
-  color: rgb(211, 159, 159); /* Düğme metni rengi */
+  background-color: #75654f; /* Düğmenin arka plan rengi */
+  color: rgb(46, 10, 10); /* Düğme metni rengi */
   border: none; /* Düğme kenarlık kalınlığı */
   padding: 9px 10px; /* Düğme iç içe boşluk (yükseklik ve genişlik) */
   text-align: center; /* Düğme metni ortalanmış */
@@ -338,7 +339,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(135, 115, 109), 68, 18);
+  background-color: rgb(135, 115, 109), 68, 18;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   margin-top: 50px;
@@ -375,3 +376,12 @@ a:hover {
 label input[type="checkbox"] {
   margin-left: 5px;
 }
+
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+

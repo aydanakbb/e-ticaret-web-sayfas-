@@ -11,7 +11,7 @@ function showAdditionalFields(userType) {
         additionalFields.innerHTML = `
             <div class="form-group">
                 <label for="companyName">Şirket Adı</label>
-                <input type="text" class="form-control" id="companyName" placeholder="Şirket Adı" required>
+                <input type="text" class="form-control" id="companyName" placeholder="Şirket Adı"  minlenght="8" maxlenght"20" required>
             </div>
             <div class="form-group">
                 <label for="taxNumber">Vergi Numarası</label>
@@ -24,11 +24,11 @@ function showAdditionalFields(userType) {
         additionalFields.innerHTML = `
             <div class="form-group">
                 <label for="customerName">Adınız</label>
-                <input type="text" class="form-control" id="customerName" placeholder="Adınız">
+                <input type="text" class="form-control" id="customerName" placeholder="Adınız"  minlenght="3" maxlenght"10" required>
             </div>
             <div class="form-group">
                 <label for="customerSurname">Soyadınız</label>
-                <input type="text" class="form-control" id="customerSurname" placeholder="Soyadınız">
+                <input type="text" class="form-control" id="customerSurname" placeholder="Soyadınız" minlenght="3" maxlenght"15" required>
             </div>
         `;
     }
@@ -44,10 +44,7 @@ function showAdditionalFields(userType) {
                 <label for "customerSurname">Soyadınız</label>
                 <input type="text" class="form-control" id="customerSurname" placeholder="Soyadınız" minlength="3" maxlength="15">
             </div>
-            <div class="form-group">
-            <label for="customerName">Şifre</label>
-            <input type="password" class="form-control" id="password" placeholder="Şfre" minlength="8" maxlength="15">
-        </div>
+           
 
         `;
     }

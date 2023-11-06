@@ -1,15 +1,26 @@
 document.getElementById('loginForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const loginUsername = document.getElementById('loginUsername').value;
-    const loginPassword = document.getElementById('loginPassword').value;
-    const storedUsername = localStorage.getItem('username');
-    const storedPassword = localStorage.getItem('password');
+  e.preventDefault();
+  const loginUsername = document.getElementById('loginUsername').value;
+  const loginPassword = document.getElementById('loginPassword').value;
   
-    if (loginUsername === storedUsername && loginPassword === storedPassword) {
-      alert('Giriş başarılı!');
-      window.location.href = 'index.html';
-    } else {
-      alert('Geçersiz kullanıcı adı veya şifre.');
+  for (var i = 0; i < localStorage.length; i++) { 
+    var key = localStorage.key(i);
+    var storedUser = JSON.parse(localStorage.getItem(key));
+    if (storedUser) {
+      if (loginUsername === storedUser.username && loginPassword === storedUser.password) {
+        if (storedUser.userType === 'musteri') {
+          // Müşteri kullanıcı, müşteri sayfasına yönlendir
+          alert('Müşteri girişi başarılı!');
+          window.location.href = 'anasayfamusteri.html';
+        } else if (storedUser.userType === 'esnaf') {
+          // Esnaf kullanıcı, esnaf sayfasına yönlendir
+          alert('Esnaf girişi başarılı!');
+          window.location.href = 'anasayfaesnaf.html';
+        }
+        break; // Döngüyü sonlandır
+      } else {
+        alert('Giriş başarısız! Hatalı şifre veya kullanıcı adı.');
+      }
     }
-  });
-  
+  }
+});
