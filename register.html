@@ -24,9 +24,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="username">Kullanıcı Adı</label>
-                <input type="text" class="form-control" id="username" placeholder="Kullanıcı Adı" minlength="8" maxlength="10" required>
-            </div>
+    <label for="kadi">Kullanıcı Adı</label>
+    <input type="text" class="form-control" id="kadi" name="textOnlyInput"
+        oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');"
+        minlength="3" maxlength="10" placeholder="Kullanıcı Adı Giriniz" required>
+</div>
             <div class="form-group">
               <label for="password">Şifre</label>
               <input type="password" class="form-control" id="password" placeholder="Şifre" minlength="8" maxlength="15" required>
@@ -35,34 +37,17 @@
               <label for="confirmPassword">Şifreyi Tekrar Girin</label>
               <input type="password" class="form-control" id="confirmPassword" placeholder="Şifre Tekrar" minlength="8" maxlength="15" required>
               <small id="passwordError" class="form-text text-danger"></small>
-            <div class="form-group">
-                <label for="city">İl</label>
-                <select class="form-control" id="city" onchange="populateDistricts()">
-                    <option value="">İl Seçin</option>
-                    <option value="istanbul">İstanbul</option>
-                    <option value="ankara">Ankara</option>
-                    <option value="izmir">İzmir</option>
-                    <!-- Diğer illeri buraya ekleyebilirsiniz -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="district">İlçe</label>
-                <select class="form-control" id="district">
-                    <option value="">İlçe Seçin</option>
-                </select>
-            </div>
-            
             <div id="additionalFields" style="display: none">
-                <!-- Ek alanlar burada görüntülenecek -->
             </div>
             <button type="submit" class="btn btn-primary">Kayıt Ol</button>
         </form>
-       
         <div class="social-icons">
           <div>
           <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dtr&ec=GAlA8wE&hl=tr&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-486049689%3A1698967149678039&theme=glif" class="google">Google ile giriş Yap<img src="img/google.png" alt="Google ile giriş"></a>
         </div>
       </div>
+      <div class="social-icons">
+      <div>
           <a href="https://tr-tr.facebook.com/login/device-based/regular/login/?login_attempt=1" class="facebook">Facebook ile giriş yap<img src="img/facebook.png" alt="Twitter ile giriş"></a>
         </div>
         </div>
@@ -70,14 +55,13 @@
    <a href="login.html"> Eğer Kayıtlıysanız Giriş Yap</a>
 
 <div class="space"></div> <!-- Formun bittiği yere göre boşluk eklendi -->
-
     <!-- Bootstrap JS dosyasını ve jQuery'yi ekleyin -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- main.js dosyasını ekleyin -->
     <script src="main.js"></script>
     <script src="kultip.js"></script>
-   
 </body>
 </html>

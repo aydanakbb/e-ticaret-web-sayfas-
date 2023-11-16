@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px;
+    position: relative;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #b76d1d;
+    font-weight: bold;
+}
+
+.user-actions a:hover {
+    color: #ff6600;
+}
+
+
+.search-box {
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 30px;
+    background-color: #ff6600;
+    color: #d8cbcb;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #af5843;
+}
+
+.categories a {
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-style: normal;
+    color: #b76d1d;
+    padding: 1px; /* İsteğe bağlı: iç kısımda boşluk bırakmak için padding ekleyebilirsiniz */
+
+}
+
+/* Temel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+}.product-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-card {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.addToCartBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.addToCartBtn:hover {
+    background-color: #4e624f;
+}
+
+.footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .footer-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding-top: 15px;
+        }
+
+        .footer-info span,
+        .footer-info a {
+            text-decoration: none;
+            color: #191616;
+        }
+
+/*-Müşteri profili ve sepet*/
+.profile-btn, .cart-btn {
+    background-color: transparent;
+    color: rgb(253, 253, 253);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn img, .cart-btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}     
+
+/*açılır pencere

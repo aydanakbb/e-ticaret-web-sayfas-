@@ -11,15 +11,12 @@
 <body>
     <div class="container">
         <h1>Giriş Yap</h1>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="loginUsername">Kullanıcı Adı</label>
-                <input type="text" class="form-control" id="loginUsername" placeholder="Kullanıcı Adı" required>
-            </div>
-            <div class="form-group">
-                <label for="loginPassword">Şifre</label>
-                <input type="password" class="form-control" id="loginPassword" placeholder="Şifre" required>
-            </div>
+        <form id="loginForm"> <!-- Bu form, kullanıcıların giriş yapması için kullanılır.-->
+            <input type="email" id="email" placeholder="E-Posta Adresi" required>
+        <!-- (yukarıdaki satır içim) kullanıcı adı için yazılmış bir inputtur.-->
+            <input type="password" id="loginPassword" name="numericPassword" oninput="this.value = this.value.replace(/[^0-9]/g, '');" minlength="8" maxlength="15" placeholder="Şifrenizi Giriniz" required>
+        <!-- (yukarıdaki satır içim) kullanıcı adı için yazılmış bir inputtur. -->
+                
             <button type="submit" class="btn btn-primary">Giriş Yap</button>
         </form>
         <a href="forgotpassword.html">Şifremi Unuttum!</a>
@@ -29,11 +26,6 @@
         </label>
         <a href="register.html">Eğer kayıtlı değilseniz kayıt olun!</a>
     </div>
-
-    <!-- Bootstrap JS dosyasını ve jQuery'yi ekleyin -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="login.js"></script>
     
 </body>
